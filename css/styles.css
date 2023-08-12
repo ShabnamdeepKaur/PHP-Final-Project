@@ -1,0 +1,344 @@
+
+main {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: '20_dbregular';  /*=================== font =============================*/
+    line-height: 1.2;
+    /* background-color: #000; */
+    color: gray;
+    font-size: larger;
+
+}
+
+/* ============ NAVBAR ============ */
+nav {
+    /* background-color: red; */
+    height: 3em;
+    display: flex;
+    justify-content: end;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+/* ============ ICON IN THE NAVBAR ============ */
+nav img {
+    height: 3em;
+    width: 3em;
+    right: 20px;
+    /* top: 50px; */
+    position: fixed;
+}
+
+/* =============== ALL THE HEADINGS ====================== */
+h2 {
+    color: #f88379;
+    text-shadow: 15px 10px 10px #f88379;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+}
+
+h2:hover{
+    font-size: 2.6em;
+
+}
+
+/* ============ TEXT ABOUT ME AND ICON PIC ============ */
+main section div {
+    width: 100%;
+    height: 28em;
+    /* background-color: orange;  */
+    display: flex;
+}
+
+/* =============== TEXT ===================== */
+main section:nth-child(1) div div:nth-child(1) {
+    flex: 2;
+    /* background-color: green;  */
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+main section:nth-child(1) div div:nth-child(1) h2 {
+    /* flex: 2; */
+    /* background-color: orange; */
+    width: 100%;
+    align-self: flex-end;
+    text-shadow: 15px 10px 10px #f88379;
+}
+
+main section:nth-child(1) div div:nth-child(1) p {
+    width: 100%;
+    /* background-color: yellow; */
+    /* align-self: flex-start; */
+    margin-top: 0.3em;
+    line-height: 3em;
+    font-size: larger;
+}
+
+/* ================= ICON PIC ====================== */
+main section:nth-child(1) div div:nth-child(2) {
+    flex: 1;
+    /* background-color: pink; */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-child(1) div div:nth-child(2) img {
+    width: 20em;
+    height: 20em;
+}
+
+/* =================== GO UP BUTTON ======================= */
+main section:nth-child(2) div {
+    /* background-color: rgb(0, 34, 255); */
+    height: 2em;
+    width: 2em;
+    margin-top: 3em;
+    /* justify-content: end; */
+    padding: 1em;
+    background-image: url(../img/top2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 50px;
+    position: fixed;
+    box-shadow: 0px 0px 4px 2px #f88379;
+}
+
+main section:nth-child(2) div:hover {
+    box-shadow: 0px 0px 8px 4px #f88379;
+}
+
+main section:nth-child(3) div {
+    margin: 1.5em;
+    border-radius: 10px;
+}
+
+main section:nth-child(3) div:nth-child(1) div:nth-child(1) {
+    background-image: url(../img/div1pic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main section:nth-child(3) div:nth-child(1) div:nth-child(2) {
+    background-image: url(../img/div2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main section:nth-child(3) div:nth-child(2) div:nth-child(2) {
+    background-image: url(../img/div4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main section:nth-child(3) div:nth-child(2) div:nth-child(1) {
+    background-image: url(../img/div3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+main section:nth-child(3) div:nth-child(1) div:nth-child(2),
+main section:nth-child(3) div:nth-child(2) div:nth-child(1) {
+    flex: 1;
+    /* background-color: #000; */
+    /* margin: 3em; */
+}
+
+main section:nth-child(3) div:nth-child(1) div:nth-child(1),
+main section:nth-child(3) div:nth-child(2) div:nth-child(2) {
+    flex: 2;
+    /* background-color: blueviolet; */
+
+}
+
+/* ========================= developers picture ============================= */
+#me,
+#prof{
+    margin: 4em;
+    margin-top: 8em;
+    width: 15em;
+    height: 18em;
+    border-radius: 50%;
+}
+
+/* ===================== ABOUT ME AND UNDER THE GUIDANCE OF ============================ */
+main section:nth-child(4) div:nth-child(1),
+main section:nth-child(5) div:nth-child(1) {
+    margin-top: 3em;
+    /* background-color: blue; */
+}
+
+
+main section:nth-child(4) div div:nth-child(1),
+main section:nth-child(5) div div:nth-child(2) {
+    flex: 2;
+    /* background-color: green; */
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+main section:nth-child(4) div div:nth-child(1) h2,
+main section:nth-child(5) div div:nth-child(2) h2 {
+    /* flex: 2; */
+    /* background-color: orange; */
+    width: 100%;
+    align-self: flex-end;
+    text-shadow: 15px 10px 10px #f88379;
+}
+
+main section:nth-child(4) div div:nth-child(1) p,
+main section:nth-child(5) div div:nth-child(2) p {
+    width: 100%;
+    /* background-color: yellow; */
+    align-self: flex-start;
+    margin-top: 1em;
+    line-height: 3em;
+    font-size: larger;
+    /* color: black; */
+}
+
+main section:nth-child(4) div div:nth-child(2),
+main section:nth-child(5) div div:nth-child(1) {
+    flex: 1;
+    align-self: center;
+}
+
+
+/* ===================== MY TOOLKIT ============================ */
+main section:nth-child(6) div {
+    align-self: flex-start;
+    margin-top: 3em;
+    /* background-color: blue; */
+    flex-wrap: wrap;
+}
+
+main section:nth-child(6) div h2 {
+    /* background-color: red; */
+    width: 40em;
+    align-self: flex-start;
+}
+
+main section:nth-child(6) div div {
+    /* background-color: maroon; */
+    height: 20em;
+    align-self: flex-end;
+    justify-content: space-evenly;
+    /* display: block; */
+
+}
+
+figcaption {
+    margin-left: 0.8em;
+}
+
+#toolkit {
+    width: 5em;
+    height: 5em;
+}
+
+
+/* ============================  FOOTER  ==================================== */
+footer {
+    margin-top: 2em;
+    /* background-color: red; */
+    height: 23em;
+}
+
+/* ================================== LET'S CONNECT ========================================= */
+.footer-div {
+    display: flex;
+    /* height: ; */
+}
+
+.footer-div div:nth-child(1) {
+    flex: 1;
+    /* background-color: aqua; */
+    padding: 1em;
+}
+
+.footer-div div:nth-child(2) {
+    height: 20em;
+    flex: 2;
+    background-color: #faebea;
+    padding: 1em;
+}
+
+.footer-div div:nth-child(1) {
+    height: 20em;
+    background-color: #faebea;
+}
+
+footer div:nth-child(2) {
+    height: 3em;
+    background-color: #f88379;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+input,
+textarea {
+    width: 50em;
+    outline: none;
+    border: 2px #f7b6af solid;
+}
+
+input:hover,
+textarea:hover {
+    border: 2px #000 solid;
+}
+
+input {
+    height: 3em;
+}
+
+#email {
+    /* display: block; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* order: 4; */
+}
+
+
+/* ==================================================== list_of_contents.php ================================================= */
+#contents-list{
+    background-color: pink;
+    height: 30em;
+}
+
+#contents-list main section{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#contents-list main section ul{
+    list-style: none;
+    margin-top: 10em;
+}
+
+#contents-list main section ul li{
+    line-height: 5em;
+}
+
+#contents-list main section ul li a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bolder;
+    font-size: x-large;
+}

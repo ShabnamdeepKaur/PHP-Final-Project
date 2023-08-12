@@ -1,0 +1,145 @@
+body {
+    width: 97%;
+    margin: 0 auto;
+    background-image: url(../img/bg2.avif); /* =============== background image in body ================*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* CLASS SELECTOR */
+.wrapper {
+    /* background-color: #D5DBDB; */
+    background-image: radial-gradient(circle, #ff99c8, #a9def9 ); /* =============== gradient to wrapper as in challenge1 color was used ================*/
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 18px white solid; /* =============== border ================*/
+    color: #333;
+    font-family: Brush Script MT;
+    font-size: xx-large;
+    width: 80vw;/* =============== width set to 80% 0f viewport width ================*/
+    margin: auto;
+    filter: opacity(70%);
+}
+
+.wrapper:hover{
+    filter:opacity(100%);/*========== opacity changed to 100% on hover ============== */
+ }
+
+/* TYPE SELECTOR */
+header > h1,
+main > h3,
+main > h2 {
+    width: 90%; /*========== width of header set to 90% 0f wrapper width ==============*/
+    margin-left: 43px;
+    text-align: center;
+    font-size: 3rem;
+    transition: ease all 1.3s;
+}
+header > h1{
+    background-color: #ff99c8;/*========== background color to wrapper ==============*/
+    margin: 0 auto;/*========== centered header within wrapper ==============*/
+}
+/* PSEUDO CLASS HOVER */
+header > h1:hover,
+main > h3:hover,
+main > h2:hover {
+    transform: scale(1.6);
+    transition: ease all 1.3s;
+    filter: drop-shadow(15px 15px 7px black);/*========== shadow on hover over headings ==============*/
+}
+
+/* ANIMATION FOR IMAGE 1 */
+@keyframes myani1 {
+    0% {
+        /* transform: translateX(100%); */
+        margin-left: 0rem;
+        opacity: 50%;
+        transform: scale(1.3);
+        transition: ease all 2s;
+        border-radius: 50%;
+    }
+
+    100% {
+        /* transform: translateX(0); */
+        margin-left: 6rem;
+        opacity: 100%;
+        transition: ease all 2s;
+
+    }
+}
+
+/* ANIMATION FOR IMAGE 2 */
+@keyframes myani2 {
+    0% {
+        /* transform: translateX(100%); */
+        margin-left: 15rem;
+        opacity: 50%;
+        transform: scale(1.3);
+        transition: ease all 2s;
+        border-radius: 50%;
+    }
+
+    100% {
+        /* transform: translateX(0); */
+        margin-left: 6rem;
+        opacity: 100%;
+        transition: ease all 2s;
+
+    }
+}
+
+main > section {
+    width: 100%;
+}
+
+/* IMAGE 1 */
+
+main > section > img:nth-of-type(1) {
+    margin-left: 9rem;
+    position: relative;
+    width: 30vw;
+    height: 35vw;
+    transition: ease all 1.3s;
+    border-radius: 15px;
+    animation-name: myani1;
+    animation-duration: 6s;
+}
+
+/* IMAGE 2 */
+main > section > img:nth-of-type(2) {
+    margin-left: 9rem;
+    position: relative;
+    width: 30vw;
+    height: 35vw;
+    transition: ease all 1.3s;
+    border-radius: 15px;
+    animation-name: myani2;
+    animation-duration: 6s;
+}
+
+main > section > img:hover{
+    box-sizing: border-box;
+    border: 15px white double;
+    filter: grayscale(60%)  blur(1px);  /*=================== filter function on 2 images ==========================*/
+}
+
+/* A LITTLE ABOUT ME PARAGRAPH */
+main > p {
+    color: #000;
+    /* default color is black*/
+}
+
+/* PSEUDO CLASS NTH CHILD */
+main > ol > li :nth-child(odd) {
+    font-weight: bold;
+}
+
+/* COPYRIGHT FOOTER */
+footer {
+    background-color: black;
+    color: #333;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+
+}
